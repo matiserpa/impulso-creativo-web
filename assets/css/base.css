@@ -185,6 +185,7 @@ strong { font-weight: 600; }
 .nav-cta {
   margin-left: 8px;
   padding: 10px 22px;
+  background: transparent !important;
   border: 1.5px solid var(--rocio);
   border-radius: var(--radius-sm);
   color: var(--rocio) !important;
