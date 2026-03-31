@@ -37,7 +37,7 @@
   --text-xl:    26px;
   --text-2xl:   34px;
   --text-3xl:   46px;
-  --text-hero:  clamp(46px, 7vw, 88px);
+  --text-hero:  clamp(40px, 5.5vw, 72px);
 
   /* ── Espaciado ── */
   --space-xs:   8px;

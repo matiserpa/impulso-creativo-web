@@ -22,8 +22,8 @@
 .hero-inner {
   position: relative; z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-lg);
   align-items: center;
 }
 
