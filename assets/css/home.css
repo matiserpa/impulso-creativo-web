@@ -71,10 +71,11 @@
   background: var(--musgo-card);
   border: 1px solid var(--borde);
   border-radius: var(--radius-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   display: flex; align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   backdrop-filter: blur(8px);
+  width: 100%;
 }
 
 .stat-item { text-align: center; }
@@ -82,7 +83,7 @@
 .stat-num {
   display: block;
   font-family: var(--font-serif);
-  font-size: var(--text-3xl);
+  font-size: clamp(28px, 3.5vw, 46px);
   font-weight: 700;
   color: var(--esmeralda-hover);
   line-height: 1;
