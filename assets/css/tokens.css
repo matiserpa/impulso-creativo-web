@@ -1,0 +1,66 @@
+/* ─────────────────────────────────────────
+   IMPULSO CREATIVO STUDIO — Design Tokens
+   Paleta: Bosque Esmeralda
+   ───────────────────────────────────────── */
+
+:root {
+  /* ── Colores principales ── */
+  --musgo:          #0F1210;   /* Fondo base */
+  --musgo-card:     #141A15;   /* Tarjetas y superficies */
+  --musgo-hover:    #1A2219;   /* Hover de superficies */
+  --musgo-deep:     #0A0D0B;   /* Sombras, overlays */
+
+  --esmeralda:      #2D7A52;   /* Acento primario */
+  --esmeralda-dark: #1A4830;   /* Fondo de CTA, secciones verdes */
+  --esmeralda-rich: #163826;   /* CTA hero verde profundo */
+  --esmeralda-hover:#3A9B68;   /* Hover de botones */
+  --esmeralda-muted:#1E3D2A;   /* Bordes y superficies sutiles */
+
+  --rocio:          #F2F5EE;   /* Texto principal (nunca blanco puro) */
+  --rocio-dim:      #C8D0C3;   /* Texto secundario */
+  --salvia:         #7A9A82;   /* Texto muted, labels */
+
+  --borde:          rgba(45, 122, 82, 0.2);
+  --borde-sutil:    rgba(242, 245, 238, 0.07);
+  --borde-hover:    rgba(45, 122, 82, 0.45);
+
+  /* ── Tipografía ── */
+  --font-serif: 'Libre Baskerville', Georgia, serif;
+  --font-sans:  'Montserrat', system-ui, sans-serif;
+
+  /* Tamaños fluid */
+  --text-xs:    11px;
+  --text-sm:    13px;
+  --text-base:  15px;
+  --text-md:    17px;
+  --text-lg:    20px;
+  --text-xl:    26px;
+  --text-2xl:   34px;
+  --text-3xl:   46px;
+  --text-hero:  clamp(46px, 7vw, 88px);
+
+  /* ── Espaciado ── */
+  --space-xs:   8px;
+  --space-sm:   16px;
+  --space-md:   32px;
+  --space-lg:   64px;
+  --space-xl:   96px;
+  --space-2xl:  140px;
+
+  /* ── Layout ── */
+  --max-width: 1160px;
+  --gutter:    clamp(20px, 5vw, 72px);
+
+  /* ── Motion ── */
+  --ease:      cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:  cubic-bezier(0, 0, 0.2, 1);
+  --dur-fast:  0.2s;
+  --dur:       0.35s;
+  --dur-slow:  0.6s;
+
+  /* ── Radios ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+}
