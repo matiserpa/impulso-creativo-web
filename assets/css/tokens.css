@@ -1,28 +1,28 @@
 /* ─────────────────────────────────────────
    IMPULSO CREATIVO STUDIO — Design Tokens
-   Paleta: Bosque Esmeralda
+   Paleta: Minimal Internacional
    ───────────────────────────────────────── */
 
 :root {
   /* ── Colores principales ── */
-  --musgo:          #0F1210;   /* Fondo base */
-  --musgo-card:     #141A15;   /* Tarjetas y superficies */
-  --musgo-hover:    #1A2219;   /* Hover de superficies */
-  --musgo-deep:     #0A0D0B;   /* Sombras, overlays */
+  --musgo:          #FFFFFF;   /* Fondo base */
+  --musgo-card:     #F8F8F8;   /* Cards y superficies */
+  --musgo-hover:    #F0F0F0;   /* Hover de superficies */
+  --musgo-deep:     #0F1210;   /* Footer */
 
-  --esmeralda:      #2D7A52;   /* Acento primario */
-  --esmeralda-dark: #1A4830;   /* Fondo de CTA, secciones verdes */
-  --esmeralda-rich: #163826;   /* CTA hero verde profundo */
-  --esmeralda-hover:#3A9B68;   /* Hover de botones */
-  --esmeralda-muted:#1E3D2A;   /* Bordes y superficies sutiles */
+  --esmeralda:      #3D8C6A;   /* Acento principal */
+  --esmeralda-dark: #2A6E52;   /* Hover de acento */
+  --esmeralda-rich: #F0F7F3;   /* Fondos tinted suaves */
+  --esmeralda-hover:#2E7A5A;   /* Hover sobre fondo claro */
+  --esmeralda-muted:rgba(61,140,106,0.08);
 
-  --rocio:          #F2F5EE;   /* Texto principal (nunca blanco puro) */
-  --rocio-dim:      #C8D0C3;   /* Texto secundario */
-  --salvia:         #7A9A82;   /* Texto muted, labels */
+  --rocio:          #0F1210;   /* Texto principal */
+  --rocio-dim:      #888888;   /* Texto secundario */
+  --salvia:         #AAAAAA;   /* Texto muted, labels */
 
-  --borde:          rgba(45, 122, 82, 0.2);
-  --borde-sutil:    rgba(242, 245, 238, 0.07);
-  --borde-hover:    rgba(45, 122, 82, 0.45);
+  --borde:          #E8E8E8;
+  --borde-sutil:    #E8E8E8;
+  --borde-hover:    #3D8C6A;
 
   /* ── Tipografía ── */
   --font-serif: 'Libre Baskerville', Georgia, serif;
