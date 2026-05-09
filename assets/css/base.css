@@ -235,7 +235,7 @@ strong { font-weight: 600; }
 }
 
 .footer-brand .nav-logo-img {
-  height: 32px; margin-bottom: var(--space-sm);
+  height: 80px; margin-bottom: var(--space-sm);
 }
 .footer-tagline {
   font-size: var(--text-sm);
