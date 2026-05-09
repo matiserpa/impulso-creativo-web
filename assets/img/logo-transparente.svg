@@ -107,18 +107,5 @@ c89 242 174 473 189 513 l27 72 -108 0 -107 0 -117 -373 c-65 -204 -125 -399
 <line x1="1000" y1="1550" x2="18200" y2="1550" stroke="#3D8C6A" stroke-width="40" opacity="0.6"/>
 </g>
 
-<g font-family="'Georgia', 'Times New Roman', serif"
-   font-size="44"
-   font-weight="400"
-   fill="#3D8C6A"
-   text-anchor="middle"
-   dominant-baseline="middle">
-  <text x="532"  y="389">S</text>
-  <text x="680"  y="389">T</text>
-  <text x="827"  y="389">U</text>
-  <text x="982"  y="389">D</text>
-  <text x="1139" y="389">I</text>
-  <text x="1281" y="389">O</text>
-</g>
 
 </svg>
