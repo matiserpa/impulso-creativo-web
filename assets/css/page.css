@@ -471,7 +471,7 @@
   color: var(--salvia);
 }
 
-.form-success {
+.form-success:not([hidden]) {
   display: flex; align-items: center; gap: 12px;
   padding: var(--space-sm) var(--space-md);
   background: var(--esmeralda-muted);
