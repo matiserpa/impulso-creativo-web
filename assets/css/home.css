@@ -4,9 +4,10 @@
 
 /* ══ HERO ══ */
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex; flex-direction: column; justify-content: center;
-  padding-top: 100px; padding-bottom: var(--space-xl);
+  padding-top: 100px; padding-bottom: 120px;
   border-bottom: 1px solid var(--borde);
   background: #FFFFFF;
 }
@@ -98,6 +99,7 @@
 .hero-scroll-hint {
   position: absolute; bottom: var(--space-md); left: var(--gutter);
   z-index: 1; display: flex; align-items: center; gap: 12px;
+  user-select: none; pointer-events: none;
 }
 .hero-scroll-line { display: block; width: 36px; height: 1px; background: var(--esmeralda); opacity: 0.4; }
 .hero-scroll-text { font-size: var(--text-xs); letter-spacing: 3px; text-transform: uppercase; color: var(--salvia); }
