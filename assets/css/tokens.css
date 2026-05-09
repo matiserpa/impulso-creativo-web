@@ -31,13 +31,13 @@
   /* Tamaños fluid */
   --text-xs:    11px;
   --text-sm:    13px;
-  --text-base:  15px;
-  --text-md:    17px;
-  --text-lg:    20px;
-  --text-xl:    26px;
-  --text-2xl:   34px;
-  --text-3xl:   46px;
-  --text-hero:  clamp(40px, 5.5vw, 72px);
+  --text-base:  clamp(14px, 1.1vw, 16px);
+  --text-md:    clamp(16px, 1.3vw, 18px);
+  --text-lg:    clamp(18px, 1.6vw, 21px);
+  --text-xl:    clamp(20px, 2vw, 26px);
+  --text-2xl:   clamp(26px, 3vw, 38px);
+  --text-3xl:   clamp(36px, 4.2vw, 52px);
+  --text-hero:  clamp(42px, 6vw, 76px);
 
   /* ── Espaciado ── */
   --space-xs:   8px;

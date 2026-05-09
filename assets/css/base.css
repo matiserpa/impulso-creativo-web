@@ -51,8 +51,8 @@ strong { font-weight: 600; }
   display: inline-block;
   font-family: var(--font-sans);
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--esmeralda);
 }
@@ -62,9 +62,11 @@ strong { font-weight: 600; }
   font-family: var(--font-serif);
   font-size: var(--text-hero);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -1.5px;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
   color: var(--rocio);
+  text-wrap: balance;
+  font-optical-sizing: auto;
 }
 .h-display em { font-style: italic; color: var(--esmeralda); }
 
@@ -72,9 +74,11 @@ strong { font-weight: 600; }
   font-family: var(--font-serif);
   font-size: var(--text-2xl);
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
   color: var(--rocio);
+  text-wrap: balance;
+  font-optical-sizing: auto;
 }
 .h-section em { font-style: italic; color: var(--esmeralda); }
 
@@ -82,16 +86,19 @@ strong { font-weight: 600; }
   font-family: var(--font-serif);
   font-size: var(--text-xl);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
   color: var(--rocio);
+  text-wrap: balance;
 }
 
 /* ── Body text ── */
 .body-text {
   font-size: var(--text-base);
   color: var(--rocio-dim);
-  line-height: 1.85;
-  max-width: 600px;
+  line-height: 1.78;
+  max-width: 62ch;
+  text-wrap: pretty;
 }
 
 /* ── Divider ── */
