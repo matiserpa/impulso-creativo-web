@@ -95,6 +95,7 @@ strong { font-weight: 600; }
 /* ── Body text ── */
 .body-text {
   font-size: var(--text-base);
+  font-weight: 500;
   color: var(--rocio-dim);
   line-height: 1.78;
   max-width: 62ch;
