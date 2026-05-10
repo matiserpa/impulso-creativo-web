@@ -251,6 +251,7 @@ strong { font-weight: 600; }
   font-family: var(--font-serif);
   font-size: var(--text-md);
   font-style: italic;
+  font-weight: 500;
   color: rgba(248,248,248,0.42);
   max-width: 300px;
   line-height: 1.65;
@@ -272,6 +273,7 @@ strong { font-weight: 600; }
 }
 .footer-links-list a {
   font-size: var(--text-sm);
+  font-weight: 500;
   color: rgba(248,248,248,0.42);
   transition: color var(--dur-fast) var(--ease),
               padding-left var(--dur-fast) var(--ease);
@@ -286,6 +288,7 @@ strong { font-weight: 600; }
 }
 .footer-social a {
   font-size: var(--text-sm);
+  font-weight: 500;
   color: rgba(248,248,248,0.42);
   display: flex; align-items: center; gap: 10px;
   transition: color var(--dur-fast) var(--ease);
