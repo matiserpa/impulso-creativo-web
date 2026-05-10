@@ -336,33 +336,13 @@
   padding: var(--space-xl) 0;
   border-bottom: 1px solid var(--borde);
 }
-.section-team-header { margin-bottom: var(--space-lg); }
 
-.team-grid {
+.team-about-inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-sm);
+  grid-template-columns: 1fr 1.6fr;
+  gap: var(--space-xl);
+  align-items: start;
 }
-
-.team-card {
-  overflow: hidden;
-  transition-delay: var(--delay, 0s);
-}
-
-.team-photo {
-  aspect-ratio: 3/4;
-  border-radius: var(--radius-md) var(--radius-md) 0 0;
-  border-bottom: 0.5px solid var(--borde);
-}
-
-.team-info {
-  padding: var(--space-md);
-  display: flex; flex-direction: column; gap: 6px;
-}
-
-.team-name { font-size: var(--text-lg); color: var(--rocio); }
-.team-role { font-size: var(--text-xs); color: var(--esmeralda); margin-bottom: 4px; }
-.team-bio { font-size: var(--text-sm); font-weight: 500; color: var(--rocio-dim); }
 
 /* Values */
 .section-values {
@@ -581,6 +561,7 @@ a.contact-info-value:hover { color: var(--esmeralda); }
   .form-row { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
+  .team-about-inner { grid-template-columns: 1fr; }
   .cta-simple-inner,
   .cta-next-inner { flex-direction: column; align-items: flex-start; }
   .cta-next-actions { flex-direction: row; flex-wrap: wrap; }
