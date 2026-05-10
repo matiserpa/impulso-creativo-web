@@ -68,7 +68,7 @@ strong { font-weight: 600; }
   text-wrap: balance;
   font-optical-sizing: auto;
 }
-.h-display em { font-style: italic; color: var(--esmeralda); }
+.h-display em { font-style: italic; font-weight: 700; color: var(--esmeralda); }
 
 .h-section {
   font-family: var(--font-serif);
@@ -179,7 +179,7 @@ strong { font-weight: 600; }
 }
 .nav-links a {
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--rocio-dim);
   letter-spacing: 0.3px;
   transition: color var(--dur-fast) var(--ease);

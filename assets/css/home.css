@@ -30,6 +30,7 @@
 .hero-desc {
   margin-bottom: var(--space-lg);
   font-size: var(--text-md);
+  font-weight: 600;
   max-width: 480px;
   color: var(--rocio-dim);
 }
@@ -60,7 +61,7 @@
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   display: grid;
-  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  grid-template-columns: 1fr 1px 1fr;
   align-items: center;
   gap: var(--space-sm);
   width: 100%;
