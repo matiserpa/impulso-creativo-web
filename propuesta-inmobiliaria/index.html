@@ -29,15 +29,16 @@
   .wrap{max-width:640px; margin:0 auto; padding:0 22px;}
 
   /* ---------- HERO ---------- */
-  .hero{background:var(--musgo); color:var(--rocio); padding:36px 22px 44px;}
+  .hero{background:var(--rocio); color:var(--musgo); padding:36px 22px 30px; border-bottom:1px solid #DDE3D6;}
+  .logo-img{display:block; max-height:42px; width:auto; max-width:200px; object-fit:contain; margin-bottom:26px;}
   .logo-slot{
     display:inline-block; border:1px dashed var(--esmeralda); color:var(--esmeralda);
     font-size:10px; letter-spacing:1px; text-transform:uppercase; font-weight:600;
-    padding:9px 14px; border-radius:4px; margin-bottom:30px;
+    padding:9px 14px; border-radius:4px; margin-bottom:26px;
   }
   .eyebrow{color:var(--esmeralda); font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:700; margin-bottom:10px;}
-  .hero h1{font-size:30px; line-height:1.18; margin-bottom:14px;}
-  .hero p{font-size:14px; color:var(--menta); font-weight:300; max-width:480px;}
+  .hero h1{font-size:30px; line-height:1.18; margin-bottom:14px; color:var(--musgo);}
+  .hero p{font-size:14px; color:var(--selva); font-weight:300; max-width:480px;}
   .hero .date{font-size:11px; color:var(--salvia); margin-top:22px;}
 
   /* ---------- SECTION ---------- */
@@ -144,8 +145,7 @@
 
   <div class="hero">
     <div class="wrap" style="padding:0;">
-      <<img src="logo-impulso.png" alt="Impulso Creativo" style="height:40px; margin-bottom:20px;">
-      <div class="eyebrow">Impulso Creativo</div>
+      <img class="logo-img" src="logo-impulso.png" alt="Impulso Creativo">
       <h1>Propuesta de<br>Desarrollo Web</h1>
       <p>Sitio web para inmobiliaria — listado de propiedades en venta y alquiler. Dos alternativas de presupuesto, tiempos y alcance, pensadas para que decidan con tranquilidad.</p>
       <div class="date">Junio 2026</div>
@@ -320,7 +320,7 @@
     </section>
 
     <footer>
-      <<img src="logo-impulso.png" alt="Impulso Creativo" style="height:40px; margin-bottom:20px;">
+      <img class="logo-img" src="logo-impulso.png" alt="Impulso Creativo" style="margin-bottom:14px;">
       <p>Cualquier duda, estamos a un mensaje de distancia.</p>
     </footer>
 
