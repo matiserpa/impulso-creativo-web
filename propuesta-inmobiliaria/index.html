@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propuesta — Sitio Web Inmobiliaria | Impulso Creativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --musgo:#0F1210;
+    --selva:#1A2018;
+    --esmeralda:#3D8C6A;
+    --esmeralda-d:#2C6B50;
+    --menta:#A8D4BE;
+    --rocio:#F2F5EE;
+    --salvia:#6E7D72;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--rocio);
+    color:var(--musgo);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:40px;
+  }
+  h1,h2,h3,.serif{font-family:'Libre Baskerville',serif; font-weight:400;}
+  .wrap{max-width:640px; margin:0 auto; padding:0 22px;}
+
+  /* ---------- HERO ---------- */
+  .hero{background:var(--musgo); color:var(--rocio); padding:36px 22px 44px;}
+  .logo-slot{
+    display:inline-block; border:1px dashed var(--esmeralda); color:var(--esmeralda);
+    font-size:10px; letter-spacing:1px; text-transform:uppercase; font-weight:600;
+    padding:9px 14px; border-radius:4px; margin-bottom:30px;
+  }
+  .eyebrow{color:var(--esmeralda); font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:700; margin-bottom:10px;}
+  .hero h1{font-size:30px; line-height:1.18; margin-bottom:14px;}
+  .hero p{font-size:14px; color:var(--menta); font-weight:300; max-width:480px;}
+  .hero .date{font-size:11px; color:var(--salvia); margin-top:22px;}
+
+  /* ---------- SECTION ---------- */
+  section{padding:38px 0;}
+  .label{color:var(--esmeralda); font-size:11px; letter-spacing:2px; text-transform:uppercase; font-weight:700; margin-bottom:8px; display:block;}
+  h2{font-size:22px; margin-bottom:14px;}
+  .lead{font-size:14px; color:var(--selva); margin-bottom:24px;}
+
+  /* feature rows */
+  .feat{display:flex; gap:14px; margin-bottom:22px;}
+  .feat .ic{
+    width:42px; height:42px; min-width:42px; border-radius:50%;
+    background:var(--menta); display:flex; align-items:center; justify-content:center;
+    font-size:18px;
+  }
+  .feat h3{font-family:'Montserrat',sans-serif; font-weight:600; font-size:15px; margin-bottom:4px;}
+  .feat p{font-size:12.5px; color:var(--salvia);}
+
+  /* reference card */
+  .ref-card{background:var(--musgo); color:var(--rocio); border-radius:8px; padding:24px; margin-top:8px;}
+  .ref-card .label{color:var(--esmeralda);}
+  .ref-card .site{font-size:14px; margin-bottom:14px;}
+  .ref-card p{font-size:12.5px; color:var(--menta); margin-bottom:14px;}
+  .ref-card hr{border:none; border-top:1px solid var(--esmeralda); margin:14px 0;}
+  .ref-card .goal{font-size:12.5px; font-style:italic; color:var(--rocio);}
+
+  /* ---------- PRICING CARDS ---------- */
+  .plan{
+    background:#fff; border:1px solid #E3E7DD; border-radius:10px;
+    padding:24px; margin-bottom:24px;
+  }
+  .plan .tag{color:var(--esmeralda); font-size:11px; letter-spacing:2px; text-transform:uppercase; font-weight:700;}
+  .plan h2{margin:6px 0 10px;}
+  .plan .desc{font-size:13px; color:var(--salvia); margin-bottom:18px;}
+  .price-box{background:var(--musgo); border-radius:8px; padding:20px; text-align:center; margin-bottom:16px;}
+  .price-box .amt{font-family:'Libre Baskerville',serif; font-size:32px; color:var(--esmeralda);}
+  .price-box .terms{font-size:11px; color:var(--menta); margin-top:6px;}
+  .time-row{display:flex; gap:12px; align-items:flex-start; margin-bottom:18px;}
+  .time-row .ic{
+    width:34px; height:34px; min-width:34px; border-radius:50%; background:var(--musgo);
+    color:var(--esmeralda); display:flex; align-items:center; justify-content:center; font-size:15px;
+  }
+  .time-row .t1{font-weight:600; font-size:13.5px;}
+  .time-row .t2{font-size:11.5px; color:var(--salvia); font-style:italic;}
+  .plan ul{list-style:none;}
+  .plan ul li{
+    position:relative; padding-left:20px; margin-bottom:12px; font-size:13.5px; color:var(--selva);
+  }
+  .plan ul li::before{
+    content:""; position:absolute; left:0; top:6px; width:9px; height:9px; border-radius:50%; background:var(--esmeralda);
+  }
+  .plan .note{font-size:12px; font-style:italic; color:var(--salvia); margin-top:10px;}
+
+  /* ---------- COMPARATIVA (stacked on mobile) ---------- */
+  .compare{background:var(--musgo); border-radius:10px; padding:6px; margin-bottom:8px;}
+  .compare-row{display:grid; grid-template-columns:1fr 1fr 1fr; padding:14px 12px; border-bottom:1px solid #232923; align-items:center;}
+  .compare-row:last-child{border-bottom:none;}
+  .compare-row .k{font-size:11.5px; font-weight:600; color:var(--rocio);}
+  .compare-row .v{font-size:11.5px; color:var(--menta); text-align:center;}
+  .compare-row.headrow .v{font-weight:700; color:var(--esmeralda); font-size:12px;}
+  .compare-note{font-size:11.5px; color:var(--salvia); font-style:italic; margin-top:12px;}
+
+  /* ---------- MAINTENANCE CARDS ---------- */
+  .mcard{
+    background:#fff; border:1px solid var(--menta); border-radius:8px; padding:16px; margin-bottom:14px;
+    display:flex; gap:14px;
+  }
+  .mcard .ic{
+    width:38px; height:38px; min-width:38px; border-radius:50%; background:var(--musgo);
+    color:var(--esmeralda); display:flex; align-items:center; justify-content:center; font-size:16px;
+  }
+  .mcard h3{font-size:14px; font-weight:600; margin-bottom:3px;}
+  .mcard .pr{color:var(--esmeralda); font-size:12.5px; font-weight:700; margin-bottom:6px;}
+  .mcard p{font-size:11.5px; color:var(--salvia);}
+
+  /* ---------- FORM FIELDS LIST ---------- */
+  .field-list li{
+    position:relative; padding-left:20px; margin-bottom:14px; font-size:13.5px; color:var(--selva);
+  }
+  .field-list li::before{
+    content:""; position:absolute; left:0; top:6px; width:9px; height:9px; border-radius:50%; background:var(--esmeralda);
+  }
+  .field-list{list-style:none; margin-bottom:18px;}
+  .note-box{background:var(--musgo); color:var(--menta); border-radius:8px; padding:14px 16px; font-size:12px; font-style:italic;}
+
+  /* ---------- STEPS ---------- */
+  .step{background:var(--musgo); color:var(--rocio); border-radius:8px; padding:18px; margin-bottom:14px;}
+  .step .n{
+    width:32px; height:32px; border-radius:50%; background:var(--selva); color:var(--esmeralda);
+    display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; margin-bottom:10px;
+  }
+  .step h3{font-size:14.5px; color:var(--esmeralda); margin-bottom:6px; font-weight:600;}
+  .step p{font-size:12.5px; color:var(--menta);}
+
+  .closing-note{font-size:13px; font-style:italic; color:var(--esmeralda); margin:20px 0; padding:16px; background:#fff; border-left:3px solid var(--esmeralda); border-radius:4px;}
+
+  footer{padding:30px 0 10px; border-top:1px solid #DDE3D6; margin-top:10px;}
+  footer p{font-size:12px; color:var(--salvia);}
+
+  .sec-divider{height:1px; background:#DDE3D6; margin:0;}
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="wrap" style="padding:0;">
+      <div class="logo-slot">Pegar logo acá</div>
+      <div class="eyebrow">Impulso Creativo</div>
+      <h1>Propuesta de<br>Desarrollo Web</h1>
+      <p>Sitio web para inmobiliaria — listado de propiedades en venta y alquiler. Dos alternativas de presupuesto, tiempos y alcance, pensadas para que decidan con tranquilidad.</p>
+      <div class="date">Junio 2026</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <section>
+      <span class="label">El pedido</span>
+      <h2>¿Qué necesitan?</h2>
+      <p class="lead">Una página web simple y profesional para mostrar las propiedades en venta y alquiler, con datos de contacto claros.</p>
+
+      <div class="feat">
+        <div class="ic">🏠</div>
+        <div><h3>Catálogo de propiedades</h3><p>Fichas con fotos, precio, ubicación y características de cada propiedad.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">🔍</div>
+        <div><h3>Filtros simples</h3><p>Para que el visitante busque por tipo de operación (venta/alquiler), zona o precio.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">📱</div>
+        <div><h3>100% responsive</h3><p>Se ve bien en celular, tablet y PC — la mayoría va a entrar desde el celular.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">💬</div>
+        <div><h3>Contacto directo</h3><p>Botón de WhatsApp y formulario de consulta en cada propiedad.</p></div>
+      </div>
+
+      <div class="ref-card">
+        <span class="label">Referencia de estilo</span>
+        <div class="site">delgadopropiedades.com.ar</div>
+        <p>Tomamos este sitio como referencia de estilo: diseño limpio, listado claro de propiedades y navegación simple.</p>
+        <hr>
+        <div class="goal">Nuestro objetivo es lograr ese mismo nivel de orden y profesionalismo, adaptado a su marca.</div>
+      </div>
+    </section>
+
+    <div class="sec-divider"></div>
+
+    <section>
+      <span class="label">Opción 1</span>
+      <div class="plan">
+        <h2>Sitio Esencial</h2>
+        <p class="desc">Ideal para mostrar la cartera de propiedades de forma prolija, sin necesidad de actualizarla todo el tiempo.</p>
+        <div class="price-box">
+          <div class="amt">USD 550</div>
+          <div class="terms">pago único — 50% al inicio / 50% a la entrega</div>
+        </div>
+        <div class="time-row">
+          <div class="ic">⏱</div>
+          <div><div class="t1">Tiempo de entrega: 2 a 3 semanas</div><div class="t2">incluye margen para revisiones tranquilas, sin apuro</div></div>
+        </div>
+        <ul>
+          <li>Diseño a medida (no plantilla genérica) con la identidad de su marca</li>
+          <li>Hasta 5 secciones: Inicio, Propiedades, Nosotros, Contacto y una a elección</li>
+          <li>Carga inicial de hasta 15 propiedades (fotos + datos)</li>
+          <li>Formulario de contacto + botón de WhatsApp</li>
+          <li>Optimizado para que cargue rápido y se vea bien en el celular</li>
+          <li>Configuración de dominio y puesta online</li>
+        </ul>
+        <p class="note">Para sumar propiedades nuevas más adelante, ofrecemos un servicio de mantenimiento mensual (ver más adelante).</p>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <span class="label">Opción 2</span>
+      <div class="plan">
+        <h2>Sitio con Panel Propio</h2>
+        <p class="desc">Todo lo de la Opción 1, más un panel para subir, editar o sacar propiedades cuando quieran, sin depender de nosotros.</p>
+        <div class="price-box">
+          <div class="amt">USD 850</div>
+          <div class="terms">pago único — 50% al inicio / 50% a la entrega</div>
+        </div>
+        <div class="time-row">
+          <div class="ic">⏱</div>
+          <div><div class="t1">Tiempo de entrega: 3 a 4 semanas</div><div class="t2">el panel necesita más pruebas antes de entregarlo</div></div>
+        </div>
+        <ul>
+          <li>Todo el contenido de la Opción 1</li>
+          <li>Panel de administración propio (usuario y contraseña)</li>
+          <li>Carga, edición y baja de propiedades sin escribir código</li>
+          <li>Subida de fotos directamente desde el panel</li>
+          <li>Capacitación de 30 minutos para aprender a usarlo</li>
+          <li>Manual simple en PDF como guía de referencia</li>
+        </ul>
+        <p class="note">Recomendada si van a sumar y sacar propiedades seguido, y quieren autonomía para hacerlo.</p>
+      </div>
+    </section>
+
+    <div class="sec-divider"></div>
+
+    <section>
+      <span class="label">Resumen</span>
+      <h2>Comparativa rápida</h2>
+      <div class="compare">
+        <div class="compare-row headrow"><div class="k"></div><div class="v">Esencial</div><div class="v">Panel Propio</div></div>
+        <div class="compare-row"><div class="k">Precio</div><div class="v">USD 550</div><div class="v">USD 850</div></div>
+        <div class="compare-row"><div class="k">Entrega</div><div class="v">2 a 3 sem.</div><div class="v">3 a 4 sem.</div></div>
+        <div class="compare-row"><div class="k">Carga de prop.</div><div class="v">La hacemos nosotros</div><div class="v">La hacen ustedes</div></div>
+        <div class="compare-row"><div class="k">Panel admin</div><div class="v">No incluye</div><div class="v">Incluido</div></div>
+        <div class="compare-row"><div class="k">Ideal para</div><div class="v">Cartera estable</div><div class="v">Cartera dinámica</div></div>
+      </div>
+      <p class="compare-note">Ambas opciones incluyen dominio configurado, hosting puesto en marcha y diseño responsive.</p>
+    </section>
+
+    <div class="sec-divider"></div>
+
+    <section>
+      <span class="label">Si el sitio crece</span>
+      <h2>Mantenimiento y funciones extra</h2>
+      <p class="lead">Una vez online, el sitio puede crecer. Estos son los costos orientativos si más adelante quieren sumar algo:</p>
+
+      <div class="mcard">
+        <div class="ic">✎</div>
+        <div><h3>Carga de propiedades (mensual)</h3><div class="pr">USD 30 – 50 / mes</div><p>Incluye hasta 6 actualizaciones por mes (alta, baja o edición, hasta 8 fotos c/u). Extra: USD 5 c/u.</p></div>
+      </div>
+      <div class="mcard">
+        <div class="ic">🛠</div>
+        <div><h3>Mantenimiento técnico básico</h3><div class="pr">USD 20 – 30 / mes</div><p>Backups, actualizaciones de seguridad y que el sitio siga online sin sorpresas.</p></div>
+      </div>
+      <div class="mcard">
+        <div class="ic">🔍</div>
+        <div><h3>SEO básico (posicionamiento)</h3><div class="pr">USD 80 – 150 (único)</div><p>Optimización para que aparezcan mejor en Google al buscar propiedades en la zona.</p></div>
+      </div>
+      <div class="mcard">
+        <div class="ic">📷</div>
+        <div><h3>Banco de fotos / video</h3><div class="pr">USD 100 – 250 (único)</div><p>Sesión de fotos profesionales o un video corto para destacar propiedades top.</p></div>
+      </div>
+      <div class="mcard">
+        <div class="ic">📋</div>
+        <div><h3>Más de 15 propiedades iniciales</h3><div class="pr">USD 2 – 4 c/u extra</div><p>Si necesitan cargar más del límite incluido en el presupuesto base.</p></div>
+      </div>
+      <div class="mcard">
+        <div class="ic">🛡</div>
+        <div><h3>Funciones nuevas (a medida)</h3><div class="pr">Se cotiza aparte</div><p>Ej: buscador avanzado por mapa, blog, multi-idioma, integración con portales (ZonaProp, etc.).</p></div>
+      </div>
+    </section>
+
+    <div class="sec-divider"></div>
+
+    <section>
+      <span class="label">Antes de arrancar</span>
+      <h2>Formulario de requerimientos</h2>
+      <p class="lead">Para que quede todo asentado por escrito, les vamos a pedir que completen un formulario corto antes de empezar. Esto nos sirve como base del proyecto y como respaldo para ambas partes.</p>
+      <ul class="field-list">
+        <li>Datos de la empresa (razón social, contacto, CUIT si factura)</li>
+        <li>Opción elegida (Esencial / Panel Propio) y forma de pago</li>
+        <li>Paleta de colores y logo (o pedido de que los ayudemos a definirlos)</li>
+        <li>Secciones deseadas además de las incluidas</li>
+        <li>Listado de propiedades a cargar (planilla con fotos y datos)</li>
+        <li>Textos definitivos (o si quieren que los redactemos nosotros)</li>
+        <li>Dominio: si ya tienen uno o si hay que registrarlo</li>
+        <li>Sitios de referencia que les gusten, además del ya mencionado</li>
+      </ul>
+      <div class="note-box">Se los enviamos como formulario de Google o documento editable — lo que les resulte más cómodo.</div>
+    </section>
+
+    <div class="sec-divider"></div>
+
+    <section>
+      <span class="label">Para arrancar</span>
+      <h2>Próximos pasos</h2>
+
+      <div class="step"><div class="n">1</div><h3>Eligen la opción</h3><p>Esencial o Panel Propio, según cuánto van a actualizar el sitio.</p></div>
+      <div class="step"><div class="n">2</div><h3>Completan el formulario</h3><p>Datos, propiedades, contenidos y referencias.</p></div>
+      <div class="step"><div class="n">3</div><h3>Arrancamos</h3><p>Pago inicial del 50% y nos ponemos a trabajar con el margen de tiempo acordado.</p></div>
+      <div class="step"><div class="n">4</div><h3>Revisión y entrega</h3><p>Les mostramos el avance, ajustamos y entregamos el sitio online.</p></div>
+
+      <div class="closing-note">Una idea más: podemos sumar una sección de "Propiedad destacada del mes" en redes (Instagram), para potenciar la web con contenido — algo en lo que ya somos especialistas.</div>
+    </section>
+
+    <footer>
+      <div class="logo-slot">Pegar logo acá</div>
+      <p>Cualquier duda, estamos a un mensaje de distancia.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
