@@ -115,9 +115,7 @@
   const submitText = form.querySelector('.submit-text');
   const submitLoad = form.querySelector('.submit-loading');
 
-  /* Crear el formulario en https://formspree.io (email: hola@impulsocreativo.com.ar)
-     y reemplazar FORM_ID_AQUI por el ID que te den. */
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/FORM_ID_AQUI';
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xdarwodb';
 
   const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
