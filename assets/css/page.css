@@ -464,6 +464,18 @@
 .form-success svg { flex-shrink: 0; }
 .form-success p { font-size: var(--text-sm); margin: 0; }
 
+.form-submit-error:not([hidden]) {
+  display: flex; align-items: center; gap: 12px;
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(224,82,82,0.08);
+  border: 1px solid rgba(224,82,82,0.25);
+  border-radius: var(--radius-sm);
+  color: #E05252;
+}
+.form-submit-error svg { flex-shrink: 0; }
+.form-submit-error p { font-size: var(--text-sm); margin: 0; color: var(--rocio-dim); }
+.form-submit-error a { color: #E05252; font-weight: 600; text-decoration: underline; }
+
 /* Sidebar */
 .contact-sidebar {
   display: flex; flex-direction: column; gap: var(--space-md);

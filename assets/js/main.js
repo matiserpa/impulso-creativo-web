@@ -110,9 +110,14 @@
   };
 
   const successEl  = document.getElementById('form-success');
+  const errorEl    = document.getElementById('form-submit-error');
   const submitBtn  = form.querySelector('.form-submit');
   const submitText = form.querySelector('.submit-text');
   const submitLoad = form.querySelector('.submit-loading');
+
+  /* Crear el formulario en https://formspree.io (email: hola@impulsocreativo.com.ar)
+     y reemplazar FORM_ID_AQUI por el ID que te den. */
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/FORM_ID_AQUI';
 
   const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -154,26 +159,30 @@
     submitBtn.disabled = true;
     submitText.hidden  = true;
     submitLoad.hidden  = false;
+    if (errorEl) errorEl.hidden = true;
 
-    /* ── Conectar backend / Formspree aquí ──
-       Ejemplo con Formspree:
-       const res = await fetch('https://formspree.io/f/TU_ID', {
-         method: 'POST',
-         headers: { 'Content-Type': 'application/json' },
-         body: JSON.stringify({
-           name: fields.name.el.value,
-           email: fields.email.el.value,
-           service: form.querySelector('#service').value,
-           message: fields.message.el.value,
-         }),
-       });
-    */
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          name: fields.name.el.value,
+          email: fields.email.el.value,
+          service: form.querySelector('#service').value,
+          message: fields.message.el.value,
+        }),
+      });
 
-    // Simulación hasta conectar backend real
-    await new Promise(r => setTimeout(r, 1000));
+      if (!res.ok) throw new Error('Formspree respondió con error');
 
-    submitBtn.hidden = true;
-    if (successEl) successEl.hidden = false;
-    form.reset();
+      submitBtn.hidden = true;
+      if (successEl) successEl.hidden = false;
+      form.reset();
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitText.hidden  = false;
+      submitLoad.hidden  = true;
+      if (errorEl) errorEl.hidden = false;
+    }
   });
 })();
