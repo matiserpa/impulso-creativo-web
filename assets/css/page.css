@@ -253,6 +253,11 @@
   object-fit: contain;
   padding: var(--space-md);
 }
+.portfolio-img--mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
 
 .portfolio-info {
   padding: var(--space-md);
