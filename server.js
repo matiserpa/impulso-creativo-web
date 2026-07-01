@@ -1,4 +1,4 @@
-// Servidor estático local — Impulso Creativo Studio
+// Servidor estático local — Impulso Creativo
 const http = require('http');
 const fs   = require('fs');
 const path = require('path');

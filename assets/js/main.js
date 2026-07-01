@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────
-   IMPULSO CREATIVO STUDIO — Main JS
+   IMPULSO CREATIVO — Main JS
    ───────────────────────────────────────── */
 
 'use strict';
