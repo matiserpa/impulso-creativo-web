@@ -16,6 +16,13 @@ function icTrack(evento, params) {
   }
 }
 
+/* ══ Microsoft Clarity (mapas de calor + grabaciones de sesión) ══ */
+(function (c, l, a, r, i, t, y) {
+  c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+  t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+  y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+})(window, document, 'clarity', 'script', 'xsikb5beu9');
+
 /* ══ Nav: scroll effect ══ */
 (function () {
   const header = document.getElementById('site-header');
