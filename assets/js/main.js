@@ -4,6 +4,18 @@
 
 'use strict';
 
+/* ══ Métricas: helper de eventos → GA4 (vía gtag) + GTM (dataLayer) + Meta Pixel ══ */
+function icTrack(evento, params) {
+  params = params || {};
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({ event: evento }, params));
+  if (typeof window.gtag === 'function') window.gtag('event', evento, params);
+  if (typeof window.fbq === 'function') {
+    var mp = { whatsapp_click: 'Contact', generate_lead: 'Lead', cta_contacto: 'Lead', social_click: 'ViewContent' };
+    if (mp[evento]) window.fbq('track', mp[evento]);
+  }
+}
+
 /* ══ Nav: scroll effect ══ */
 (function () {
   const header = document.getElementById('site-header');
@@ -175,6 +187,7 @@
 
       submitBtn.hidden = true;
       if (successEl) successEl.hidden = false;
+      icTrack('generate_lead', { form: 'contacto', servicio: (form.querySelector('#service') || {}).value || '' });
       form.reset();
     } catch (err) {
       submitBtn.disabled = false;
@@ -182,5 +195,48 @@
       submitLoad.hidden  = true;
       if (errorEl) errorEl.hidden = false;
     }
+  });
+})();
+
+/* ══ Métricas: eventos de interacción (WhatsApp, CTAs, redes, scroll) ══ */
+(function () {
+  function ready(fn) {
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+  ready(function () {
+    // Clicks a WhatsApp (CTA, footer, botón flotante)
+    document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        icTrack('whatsapp_click', { origen: el.className || 'link' });
+      });
+    });
+    // Clicks a los CTA "Hablemos" (a la página de contacto)
+    document.querySelectorAll('a[href*="contacto.html"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        icTrack('cta_contacto', { texto: (el.textContent || '').trim().slice(0, 60) });
+      });
+    });
+    // Clicks a redes sociales
+    document.querySelectorAll('a[href*="instagram.com"], a[href*="linkedin.com"], a[href*="facebook.com"], a[href*="tiktok.com"]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var h = el.href;
+        var red = h.indexOf('instagram') > -1 ? 'instagram'
+                : h.indexOf('linkedin') > -1 ? 'linkedin'
+                : h.indexOf('facebook') > -1 ? 'facebook' : 'tiktok';
+        icTrack('social_click', { red: red });
+      });
+    });
+    // Profundidad de scroll (25/50/75/100 %)
+    var hitos = [25, 50, 75, 100], vistos = {};
+    window.addEventListener('scroll', function () {
+      var doc = document.documentElement;
+      var alto = doc.scrollHeight - window.innerHeight;
+      if (alto <= 0) return;
+      var pct = Math.round((doc.scrollTop / alto) * 100);
+      hitos.forEach(function (m) {
+        if (pct >= m && !vistos[m]) { vistos[m] = true; icTrack('scroll_profundidad', { porcentaje: m }); }
+      });
+    }, { passive: true });
   });
 })();
