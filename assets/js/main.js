@@ -16,6 +16,22 @@ function icTrack(evento, params) {
   }
 }
 
+/* ══ GA4 directo (gtag): puente para los eventos personalizados ══ */
+// GTM (GTM-TH7FBZMW) solo tiene la etiqueta base de GA4, así que las page_view llegaban
+// pero los eventos de icTrack morían en el dataLayer sin ninguna etiqueta que los reenvíe.
+// Definimos window.gtag con send_page_view:false: los eventos personalizados van directo
+// a GA4 y las vistas de página las sigue mandando GTM (sin duplicar).
+(function () {
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-E2E104JJGJ';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-E2E104JJGJ', { send_page_view: false });
+})();
+
 /* ══ Microsoft Clarity (mapas de calor + grabaciones de sesión) ══ */
 (function (c, l, a, r, i, t, y) {
   c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
