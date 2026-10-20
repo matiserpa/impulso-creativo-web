@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TH7FBZMW');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>CEPATAGONIA — Caso completo: marca, sitio y sistema de entradas de un congreso | Impulso Creativo</title>
+  <meta name="description" content="Cómo armamos el ecosistema digital completo del primer Congreso de Estética de la Patagonia: identidad aplicada, contenido para redes, sitio oficial y un sistema propio de venta de entradas y acreditación por QR.">
+  <meta name="keywords" content="caso de éxito agencia, congreso de estética Patagonia, identidad de marca para eventos, sitio web de congreso, sistema de entradas a medida, acreditación QR">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://impulsocreativo.com.ar/cepatagonia.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://impulsocreativo.com.ar/cepatagonia.html">
+  <meta property="og:title" content="CEPATAGONIA — el caso completo | Impulso Creativo">
+  <meta property="og:description" content="Marca, contenido, sitio oficial y sistema propio de entradas y acreditación para el primer Congreso de Estética de la Patagonia.">
+  <meta property="og:image" content="https://impulsocreativo.com.ar/assets/img/portfolio/cepatagonia/kv-banner.jpg">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Impulso Creativo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CEPATAGONIA — el caso completo | Impulso Creativo">
+  <meta name="twitter:description" content="Marca, contenido, sitio oficial y sistema propio de entradas y acreditación para un congreso.">
+  <meta name="twitter:image" content="https://impulsocreativo.com.ar/assets/img/portfolio/cepatagonia/kv-banner.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/page.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <style>
+    /* ── Caso: utilidades de galería ── */
+    .caso-hero-img { border-radius: var(--radius-md); overflow: hidden; margin-top: var(--space-md); }
+    .caso-hero-img img { width: 100%; height: auto; display: block; }
+
+    .caso-ficha {
+      display: grid; gap: 1px;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      background: var(--borde);
+      border: 1px solid var(--borde);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: var(--space-md);
+    }
+    .caso-ficha div { background: #FFFFFF; padding: 22px 24px; }
+    .caso-ficha dt {
+      font-size: var(--text-xs); font-weight: 700; letter-spacing: .18em;
+      text-transform: uppercase; color: var(--esmeralda); margin-bottom: 8px;
+    }
+    .caso-ficha dd { font-size: var(--text-sm); font-weight: 600; color: var(--rocio); line-height: 1.6; }
+
+    .caso-bloque { padding: var(--space-lg) 0; border-top: 1px solid var(--borde); }
+    .caso-bloque-head { max-width: 680px; margin-bottom: var(--space-md); }
+    .caso-bloque-head .h-section { margin-top: 12px; }
+    .caso-bloque-head .body-text { margin-top: 16px; }
+
+    .caso-grid { display: grid; gap: 18px; align-items: start; }
+    .caso-grid--3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .caso-grid--4 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+    .caso-grid--2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+    .caso-pieza { margin: 0; border-radius: var(--radius-sm); overflow: hidden; background: var(--musgo-card); border: 0.5px solid var(--borde); }
+    .caso-pieza img { width: 100%; height: auto; object-fit: cover; display: block; aspect-ratio: 4 / 5; }
+    .caso-pieza--libre img { aspect-ratio: auto; object-fit: contain; }
+    .caso-pieza--story img { aspect-ratio: 9 / 16; }
+    .caso-pieza--web img { aspect-ratio: 16 / 10; }
+    .caso-pieza figcaption {
+      font-size: var(--text-xs); color: var(--rocio-dim); font-weight: 500;
+      padding: 10px 12px; letter-spacing: .02em;
+    }
+
+    .caso-ejes { margin-top: var(--space-md); border-top: 1px solid var(--borde); }
+    .caso-eje { display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--borde); align-items: start; }
+    .caso-eje-num { font-family: var(--font-serif); font-size: var(--text-xl); color: var(--esmeralda); line-height: 1; padding-top: 2px; }
+    .caso-eje h3 { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--rocio); line-height: 1.3; }
+    .caso-eje p { font-size: var(--text-sm); font-weight: 500; color: var(--rocio-dim); margin-top: 6px; line-height: 1.65; }
+
+    .caso-resultado { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: var(--space-md); }
+    .caso-resultado .card { padding: 24px; }
+    .caso-resultado h3 { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--rocio); }
+    .caso-resultado p { font-size: var(--text-sm); font-weight: 500; color: var(--rocio-dim); margin-top: 8px; line-height: 1.7; }
+
+    @media (max-width: 620px) {
+      .caso-eje { grid-template-columns: 36px 1fr; gap: 14px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "CEPATAGONIA — Congreso de Estética de la Patagonia",
+    "about": "Identidad aplicada, contenido para redes, sitio oficial y sistema propio de venta de entradas y acreditación por QR para la primera edición del Congreso de Estética de la Patagonia.",
+    "creator": { "@type": "Organization", "name": "Impulso Creativo", "url": "https://impulsocreativo.com.ar" },
+    "url": "https://impulsocreativo.com.ar/cepatagonia.html",
+    "image": "https://impulsocreativo.com.ar/assets/img/portfolio/cepatagonia/kv-banner.jpg",
+    "inLanguage": "es-AR"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://impulsocreativo.com.ar/" },
+      { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://impulsocreativo.com.ar/portfolio.html" },
+      { "@type": "ListItem", "position": 3, "name": "CEPATAGONIA", "item": "https://impulsocreativo.com.ar/cepatagonia.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH7FBZMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link" href="#main">Ir al contenido</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrapper nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Impulso Creativo — Inicio">
+      <img src="assets/img/logo-transparente.svg" alt="Impulso Creativo" class="nav-logo-img">
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="btn btn-primary nav-cta">Hablemos</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── HERO ── -->
+  <section class="page-hero">
+    <div class="wrapper">
+      <p class="label reveal">Caso · 2026</p>
+      <h1 class="h-display page-hero-title reveal" style="--delay:.1s">
+        Un congreso armado<br><em>desde cero.</em>
+      </h1>
+      <p class="body-text page-hero-desc reveal" style="--delay:.2s">
+        CEPATAGONIA es la primera edición del Congreso de Estética de la Patagonia. Llegamos cuando era una idea con nombre y nada más: hicimos la marca, el contenido, el sitio oficial y el sistema propio con el que se vendieron y se acreditaron las entradas.
+      </p>
+      <div class="caso-hero-img reveal" style="--delay:.3s">
+        <img src="assets/img/portfolio/cepatagonia/kv-banner.jpg" alt="Pieza gráfica principal del Congreso de Estética de la Patagonia" width="1600" height="1071">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FICHA ── -->
+  <section style="padding: 24px 0">
+    <div class="wrapper">
+      <dl class="caso-ficha reveal">
+        <div>
+          <dt>Cliente</dt>
+          <dd>CEPATAGONIA — Congreso de Estética de la Patagonia</dd>
+        </div>
+        <div>
+          <dt>Cuándo y dónde</dt>
+          <dd>10 y 11 de octubre de 2026<br>San Martín de los Andes</dd>
+        </div>
+        <div>
+          <dt>Qué hicimos</dt>
+          <dd>Identidad aplicada · Contenido y redes · Sitio oficial · Sistema de entradas y acreditación</dd>
+        </div>
+        <div>
+          <dt>Distinción</dt>
+          <dd>Declarado de Interés Municipal por San Martín de los Andes</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ── PUNTO DE PARTIDA ── -->
+  <section class="caso-bloque" style="border-top:none">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">El punto de partida</p>
+        <h2 class="h-section">Primera edición, sin <em>nada hecho.</em></h2>
+        <p class="body-text">
+          Un congreso de estética celular avanzada, en una ciudad de montaña, dirigido a profesionales que viajan desde todo el país. No había marca, ni sitio, ni una forma propia de vender entradas: la venta dependía de una plataforma externa y la puerta se resolvía a mano. Había que construir las cuatro cosas a la vez y que llegaran juntas al 10 de octubre.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 01 IDENTIDAD ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-identidad">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">01 — Identidad</p>
+        <h2 id="bloque-identidad" class="h-section">Una marca que se lee<br>como <em>la Patagonia.</em></h2>
+        <p class="body-text">
+          El isotipo resuelve en un solo trazo continuo la montaña, el lago, el árbol y un perfil humano: la idea del congreso entera en una línea. De ahí sale todo el sistema — serif editorial para los títulos, sans en versalitas para los datos, blanco y negro con verde profundo como único acento.
+        </p>
+      </div>
+      <div class="caso-grid caso-grid--2 reveal">
+        <figure class="caso-pieza caso-pieza--libre" style="display:flex; flex-direction:column; justify-content:center">
+          <img src="assets/img/portfolio/cepatagonia/identidad-logo.png" alt="Isotipo y logotipo de CEPATAGONIA: montaña, lago y perfil humano en un trazo continuo" loading="lazy" style="padding:32px; background:#FFFFFF">
+          <figcaption>Logo oficial — construcción en línea continua.</figcaption>
+        </figure>
+        <figure class="caso-pieza caso-pieza--libre">
+          <img src="assets/img/portfolio/cepatagonia/kv-vertical.jpg" alt="Pieza vertical del congreso: ruta de montaña y rostro fundidos" loading="lazy">
+          <figcaption>Key visual vertical — el paisaje y la piel en una sola imagen.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 02 CONTENIDO ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-contenido">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">02 — Comunicación</p>
+        <h2 id="bloque-contenido" class="h-section">Contenido que explicaba<br>un congreso <em>que no existía.</em></h2>
+        <p class="body-text">
+          Nadie había ido nunca a este congreso, así que la comunicación tenía que enseñar antes de vender: qué es la estética regenerativa, qué son los exosomas, qué se lleva puesto el que viaja. Posteos, carruseles e historias con el mismo sistema visual, sostenidos día a día durante toda la previa.
+        </p>
+      </div>
+      <div class="caso-grid caso-grid--3 reveal">
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/post-regenerativa.jpg" alt="Posteo: de la estética tradicional a la estética regenerativa" loading="lazy">
+          <figcaption>Posteo de concepto — el cambio de paradigma.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/post-lo-que-se-viene.jpg" alt="Posteo: lo que se viene en estética" loading="lazy">
+          <figcaption>Posteo de anticipación — el verde de marca.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/post-serum.jpg" alt="Posteo editorial de producto para el congreso" loading="lazy">
+          <figcaption>Posteo editorial — producto y textura.</figcaption>
+        </figure>
+      </div>
+
+      <p class="label reveal" style="margin-top:var(--space-md); display:block">Carrusel completo</p>
+      <div class="caso-grid caso-grid--4 reveal" style="margin-top:12px">
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/carrusel-1.jpg" alt="Carrusel, placa 1: 3 cosas que vas a aprender en el congreso" loading="lazy">
+          <figcaption>1 — La promesa.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/carrusel-2.jpg" alt="Carrusel, placa 2: exosomas" loading="lazy">
+          <figcaption>2 — Exosomas.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/carrusel-3.jpg" alt="Carrusel, placa 3: skin quality desde adentro, nutracéuticos" loading="lazy">
+          <figcaption>3 — Nutracéuticos.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/carrusel-4.jpg" alt="Carrusel, placa 4: pieles del sur" loading="lazy">
+          <figcaption>4 — Pieles del sur.</figcaption>
+        </figure>
+      </div>
+
+      <div class="caso-grid caso-grid--3 reveal" style="margin-top:var(--space-md); align-items:start">
+        <figure class="caso-pieza caso-pieza--story">
+          <img src="assets/img/portfolio/cepatagonia/historia-salon.jpg" alt="Historia vertical anunciando la jornada post congreso del 12 de octubre" loading="lazy">
+          <figcaption>Historia — el anuncio del post congreso.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/speaker-laura-varela.jpg" alt="Pieza de presentación de la speaker Laura Varela" loading="lazy">
+          <figcaption>Pieza de speaker — plantilla del sistema.</figcaption>
+        </figure>
+        <figure class="caso-pieza">
+          <img src="assets/img/portfolio/cepatagonia/post-congreso-centro.jpg" alt="Pieza del post congreso dirigida a centros estéticos y spa" loading="lazy">
+          <figcaption>Post congreso — segmento de gestión y spa.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 03 PROGRAMA ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-programa">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">03 — El programa</p>
+        <h2 id="bloque-programa" class="h-section">Seis ejes, nueve voces,<br>una sola <em>línea editorial.</em></h2>
+        <p class="body-text">
+          El contenido académico del congreso se ordenó en seis ejes temáticos. Cada eje bajó al sitio, a las piezas de speaker y al material de sponsors con la misma jerarquía y el mismo tono, para que el programa se entendiera de un vistazo.
+        </p>
+      </div>
+      <div class="caso-ejes reveal">
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">01</span>
+          <div>
+            <h3>Regeneración celular &amp; wellaging</h3>
+            <p>Bases biológicas del wellaging, senescencia celular, telómeros y protocolos personalizados. — Adriana Sardot.</p>
+          </div>
+        </div>
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">02</span>
+          <div>
+            <h3>Terapias manuales avanzadas &amp; modelado corporal</h3>
+            <p>Drenaje linfático, maderoterapia y lipodrenaje integrado. — Ana Paula Travattoni.</p>
+          </div>
+        </div>
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">03</span>
+          <div>
+            <h3>Biotecnología &amp; skin quality</h3>
+            <p>Nutracéuticos como potenciadores de la calidad cutánea y sinergia con procedimientos. — Dra. Carolina Laxague.</p>
+          </div>
+        </div>
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">04</span>
+          <div>
+            <h3>Innovación en exosomas &amp; microbiota cutánea</h3>
+            <p>Aplicación clínica de exosomas y lanzamiento de formulación con pre y probióticos. — Laboratorios U-DERM y SEM.</p>
+          </div>
+        </div>
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">05</span>
+          <div>
+            <h3>Estética reparadora &amp; estimulación folicular</h3>
+            <p>Estrías, cicatrices atróficas y activación folicular sin pigmentación. — Laura Varela.</p>
+          </div>
+        </div>
+        <div class="caso-eje">
+          <span class="caso-eje-num" aria-hidden="true">06</span>
+          <div>
+            <h3>Gestión, marketing &amp; rentabilidad del gabinete</h3>
+            <p>Ventas aplicadas al gabinete y gerenciamiento estratégico de spa en el post congreso. — Eduardo Finci.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 04 SITIO ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-sitio">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">04 — Sitio oficial</p>
+        <h2 id="bloque-sitio" class="h-section">Un sitio que también<br>tenía que <em>vender el viaje.</em></h2>
+        <p class="body-text">
+          cepatagonia.com es una landing editorial con el programa, los speakers, la compra de entradas integrada y una sección de turismo y hospedaje — porque para la mayoría de los asistentes ir al congreso era también organizar un viaje a San Martín de los Andes. Captura de leads en varios puntos y todo a nombre del cliente: dominio, código y datos.
+        </p>
+      </div>
+      <div class="caso-grid caso-grid--2 reveal">
+        <figure class="caso-pieza caso-pieza--web">
+          <img src="assets/img/portfolio/cepatagonia-hero.jpg" alt="Sitio oficial del Congreso de Estética de la Patagonia" loading="lazy">
+          <figcaption>cepatagonia.com — portada del sitio oficial.</figcaption>
+        </figure>
+        <div class="card" style="padding:28px; display:flex; flex-direction:column; justify-content:center">
+          <h3 class="h-card">Lo que resolvía el sitio</h3>
+          <ul class="service-includes" style="margin-top:14px">
+            <li>Programa y speakers en formato editorial</li>
+            <li>Compra de entradas integrada</li>
+            <li>Turismo y hospedaje en San Martín de los Andes</li>
+            <li>Captura de leads multicanal</li>
+          </ul>
+          <a href="https://cepatagonia.com" class="btn btn-ghost" style="margin-top:20px" target="_blank" rel="noopener noreferrer">Ver el sitio del congreso</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 05 SISTEMA ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-sistema">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">05 — Entradas y acreditación</p>
+        <h2 id="bloque-sistema" class="h-section">El sistema propio que<br>reemplazó a la <em>plataforma externa.</em></h2>
+        <p class="body-text">
+          Desarrollamos el sistema completo: venta online con Mercado Pago y confirmación automática del pago, entradas con QR enviadas por mail, butacas numeradas, promociones, códigos de descuento y becas, panel de administración a medida y acreditación por QR en la puerta el día del congreso. Operamos la puerta nosotros mismos, las dos jornadas.
+        </p>
+      </div>
+      <div class="caso-grid caso-grid--2 reveal">
+        <figure class="caso-pieza caso-pieza--libre">
+          <img src="assets/img/portfolio/sistema-plano.png" alt="Plano de butacas del panel de administración, con datos de demostración" loading="lazy">
+          <figcaption>Plano de la sala en tiempo real — captura con datos de demostración.</figcaption>
+        </figure>
+        <div class="card" style="padding:28px; display:flex; flex-direction:column; justify-content:center">
+          <h3 class="h-card">De la venta a la puerta</h3>
+          <ul class="service-includes" style="margin-top:14px">
+            <li>Venta online con Mercado Pago</li>
+            <li>Entrada con QR única por asistente</li>
+            <li>Butacas numeradas, promos y becas</li>
+            <li>Panel de administración a medida</li>
+            <li>Acreditación por QR en puerta</li>
+          </ul>
+          <a href="congresos.html" class="btn btn-ghost" style="margin-top:20px">Cómo funciona el sistema</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTADO ── -->
+  <section class="caso-bloque" aria-labelledby="bloque-resultado">
+    <div class="wrapper">
+      <div class="caso-bloque-head reveal">
+        <p class="label">El resultado</p>
+        <h2 id="bloque-resultado" class="h-section">Llegó entero<br>al <em>10 de octubre.</em></h2>
+      </div>
+      <div class="caso-resultado reveal">
+        <div class="card">
+          <h3>Interés Municipal</h3>
+          <p>El congreso fue declarado de Interés Municipal por San Martín de los Andes.</p>
+        </div>
+        <div class="card">
+          <h3>Sistema propio en producción</h3>
+          <p>La venta de entradas dejó de depender de una plataforma de terceros: pasó a un sistema a nombre del organizador, con sus datos y su dominio.</p>
+        </div>
+        <div class="card">
+          <h3>Dos jornadas y un post congreso</h3>
+          <p>El 10 y el 11 de octubre, más la jornada exclusiva del 12, con la acreditación operada por nosotros en la puerta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section-cta-next" aria-labelledby="cta-caso-heading">
+    <div class="wrapper cta-next-inner reveal">
+      <div class="cta-next-text">
+        <p class="label">¿Organizás un congreso?</p>
+        <h2 id="cta-caso-heading" class="h-section" style="margin-top:12px">
+          Esto mismo,<br>para <em>tu evento.</em>
+        </h2>
+        <p class="body-text" style="margin-top:16px">
+          Marca, sitio y sistema de entradas pueden ir juntos o por partes. Contanos en qué está tu evento y te decimos qué necesita primero.
+        </p>
+      </div>
+      <div class="cta-next-actions">
+        <a href="https://wa.me/5491169695746?text=%C2%A1Hola!%20Vi%20el%20caso%20de%20CEPATAGONIA%20y%20organizo%20un%20evento." class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
+        <a href="portfolio.html" class="btn btn-outline">Ver más casos</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html"><img src="assets/img/logo-blanco.svg" alt="Impulso Creativo" class="nav-logo-img"></a>
+        <p class="footer-tagline">Transformamos marcas en algo que la gente recuerda.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Páginas</p>
+        <ul class="footer-links-list" role="list">
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="congresos.html">Congresos y eventos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Redes</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/impulsocreativo.ba" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="https://linkedin.com/company/impulsocreativo-ba" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Impulso Creativo · Buenos Aires, Argentina</p>
+      <p class="footer-copy">Diseñado con propósito.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5491169695746?text=%C2%A1Hola!%20Vi%20el%20caso%20de%20CEPATAGONIA%20y%20organizo%20un%20evento." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
