@@ -21,6 +21,8 @@ const MIME = {
   '.woff2':'font/woff2',
   '.ttf':  'font/ttf',
   '.webp': 'image/webp',
+  '.mp4':  'video/mp4',
+  '.webm': 'video/webm',
   '.xml':  'application/xml',
   '.txt':  'text/plain',
 };

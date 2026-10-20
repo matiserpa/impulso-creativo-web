@@ -83,6 +83,20 @@
       padding: 10px 12px; letter-spacing: .02em;
     }
 
+    .caso-claim {
+      font-family: var(--font-serif);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: var(--rocio);
+      margin-top: 14px;
+      text-wrap: balance;
+    }
+    .caso-claim em { font-style: italic; color: var(--esmeralda); }
+
+    .caso-video { width: 100%; height: auto; display: block; aspect-ratio: 4 / 5; object-fit: cover; background: var(--musgo-card); }
+
     .caso-ejes { margin-top: var(--space-md); border-top: 1px solid var(--borde); }
     .caso-eje { display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--borde); align-items: start; }
     .caso-eje-num { font-family: var(--font-serif); font-size: var(--text-xl); color: var(--esmeralda); line-height: 1; padding-top: 2px; }
@@ -192,6 +206,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ── EL CLAIM ── -->
+  <section style="padding: 48px 0 8px">
+    <div class="wrapper">
+      <div class="reveal" style="max-width:860px">
+        <p class="label">El claim</p>
+        <p class="caso-claim">
+          Primer Congreso de Estética de la Patagonia.<br>
+          <em>Ciencia que regenera, naturaleza que inspira.</em>
+        </p>
+        <p class="body-text" style="margin-top:20px">
+          Las dos mitades del congreso en una línea: el rigor científico de la estética regenerativa y el lugar donde pasa. Ese equilibrio ordenó todo lo demás — por eso el blanco y negro clínico convive con el verde profundo de la cordillera, y por eso el sitio habla del programa y del viaje con el mismo peso.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- ── PUNTO DE PARTIDA ── -->
   <section class="caso-bloque" style="border-top:none">
     <div class="wrapper">
@@ -286,6 +316,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="assets/img/portfolio/cepatagonia/post-congreso-centro.jpg" alt="Pieza del post congreso dirigida a centros estéticos y spa" loading="lazy">
           <figcaption>Post congreso — segmento de gestión y spa.</figcaption>
         </figure>
+      </div>
+
+      <p class="label reveal" style="margin-top:var(--space-md); display:block">En movimiento</p>
+      <div class="caso-grid caso-grid--2 reveal" style="margin-top:12px">
+        <figure class="caso-pieza" style="margin:0">
+          <video class="caso-video" src="assets/video/cepatagonia-reel-laboratorios.mp4"
+                 poster="assets/img/portfolio/cepatagonia/reel-poster.jpg"
+                 muted loop playsinline autoplay preload="metadata"
+                 aria-label="Reel de los laboratorios que acompañaron la primera edición del congreso"></video>
+          <figcaption>Reel de laboratorios — 15 segundos, formato 4:5 para feed.</figcaption>
+        </figure>
+        <div class="card" style="padding:28px; display:flex; flex-direction:column; justify-content:center">
+          <h3 class="h-card">Los sponsors, con la misma marca</h3>
+          <p class="body-text" style="margin-top:12px">
+            Los laboratorios que acompañaron la edición entraron al sistema visual sin romperlo: tipografía, ritmo y el isotipo de la montaña como firma. Un reel corto para feed, pensado para que se entienda sin sonido y sin que haga falta leer todo.
+          </p>
+        </div>
       </div>
     </div>
   </section>
