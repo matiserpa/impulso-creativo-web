@@ -9,7 +9,7 @@
   display: flex; flex-direction: column; justify-content: center;
   padding-top: 100px; padding-bottom: 120px;
   border-bottom: 1px solid var(--borde);
-  background: #FFFFFF;
+  background: var(--marfil);
 }
 
 .hero-inner {
@@ -32,7 +32,7 @@
   font-size: var(--text-md);
   font-weight: 600;
   max-width: 480px;
-  color: var(--rocio-dim);
+  color: var(--tierra);
 }
 
 .hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; align-items: center; }
@@ -41,12 +41,12 @@
 .hero-link-secondary {
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--esmeralda);
+  color: var(--verde);
   letter-spacing: 0.3px;
   display: inline-flex; align-items: center; gap: 6px;
   transition: gap var(--dur) var(--ease), color var(--dur) var(--ease);
 }
-.hero-link-secondary:hover { gap: 10px; color: var(--esmeralda-hover); }
+.hero-link-secondary:hover { gap: 10px; color: var(--verde-hover); }
 
 /* Visual / stats panel */
 .hero-visual {
@@ -56,7 +56,7 @@
 
 .hero-stats {
   position: relative; z-index: 1;
-  background: var(--musgo-card);
+  background: var(--crema);
   border: 0.5px solid var(--borde);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -72,21 +72,21 @@
 
 .stat-num {
   display: block;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(24px, 2.8vw, 40px);
   font-weight: 700;
-  color: var(--rocio);
+  color: var(--negro);
   line-height: 1;
   margin-bottom: 6px;
 }
-.stat-num--accent { color: var(--esmeralda); }
+.stat-num--accent { color: var(--verde); }
 
 .stat-label {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--salvia);
+  color: var(--tierra-claro);
   line-height: 1.4;
 }
 
@@ -102,8 +102,8 @@
   z-index: 1; display: flex; align-items: center; gap: 12px;
   user-select: none; pointer-events: none;
 }
-.hero-scroll-line { display: block; width: 36px; height: 1px; background: var(--esmeralda); opacity: 0.4; }
-.hero-scroll-text { font-size: var(--text-xs); letter-spacing: 3px; text-transform: uppercase; color: var(--salvia); }
+.hero-scroll-line { display: block; width: 36px; height: 1px; background: var(--verde); opacity: 0.4; }
+.hero-scroll-text { font-size: var(--text-xs); letter-spacing: 3px; text-transform: uppercase; color: var(--tierra-claro); }
 
 /* ══ PILLARS ══ */
 .section-pillars {
@@ -126,11 +126,11 @@
 
 .pillar-icon {
   width: 44px; height: 44px;
-  background: var(--esmeralda-muted);
+  background: var(--verde-muted);
   border: 0.5px solid var(--borde);
   border-radius: var(--radius-md);
   display: flex; align-items: center; justify-content: center;
-  color: var(--esmeralda);
+  color: var(--verde);
   flex-shrink: 0;
   margin-bottom: 4px;
 }
@@ -167,8 +167,8 @@
   border: 0.5px solid var(--borde);
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
-  color: var(--esmeralda);
-  background: var(--esmeralda-muted);
+  color: var(--verde);
+  background: var(--verde-muted);
   flex-shrink: 0;
   margin-bottom: 4px;
 }
@@ -201,7 +201,7 @@
   border-radius: var(--radius-md) var(--radius-md) 0 0;
   border-bottom: 0.5px solid var(--borde);
   overflow: hidden;
-  background: var(--musgo-card);
+  background: var(--crema);
 }
 .case-img img {
   width: 100%;
@@ -219,14 +219,14 @@
 .case-meta {
   display: flex; justify-content: space-between; align-items: center;
 }
-.case-year { font-size: var(--text-xs); color: var(--salvia); letter-spacing: 1px; }
+.case-year { font-size: var(--text-xs); color: var(--tierra-claro); letter-spacing: 1px; }
 .case-title { margin: 0; }
-.case-result { font-size: var(--text-sm); color: var(--rocio-dim); }
+.case-result { font-size: var(--text-sm); color: var(--tierra); }
 .case-card .btn-ghost { margin-top: auto; }
 
 /* ══ CTA ESMERALDA ══ */
 .section-cta-green {
-  background: var(--musgo-card);
+  background: var(--crema);
   border-top: 1px solid var(--borde);
   padding: var(--space-2xl) 0;
 }
@@ -241,10 +241,10 @@
 .cta-green-heading {
   margin-top: 12px; margin-bottom: var(--space-md);
   font-size: clamp(28px, 4vw, 48px);
-  color: var(--rocio);
+  color: var(--negro);
 }
-.cta-green-heading em { color: var(--esmeralda); font-style: italic; }
-.cta-green-desc { max-width: 500px; color: var(--rocio-dim); }
+.cta-green-heading em { color: var(--verde); font-style: normal; }
+.cta-green-desc { max-width: 500px; color: var(--tierra); }
 
 .cta-green-actions {
   display: flex; flex-direction: column; gap: var(--space-sm);

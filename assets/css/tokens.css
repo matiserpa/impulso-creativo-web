@@ -1,32 +1,69 @@
 /* ─────────────────────────────────────────
    IMPULSO CREATIVO — Design Tokens
-   Paleta: Minimal Internacional
+   Brandbook v3 · claro primario, oscuro secundario
    ───────────────────────────────────────── */
 
+/* ── Tipografía principal, autoalojada ──
+   Alte Haas Grotesk es freeware: la licencia exige distribuir
+   las fuentes junto con "Alte Haas Grotesk licence.rtf", que
+   está en esta misma carpeta de assets/fonts/. */
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('../fonts/AlteHaasGrotesk-Regular.woff2') format('woff2'),
+       url('../fonts/AlteHaasGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('../fonts/AlteHaasGrotesk-Bold.woff2') format('woff2'),
+       url('../fonts/AlteHaasGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  /* ── Colores principales ── */
-  --musgo:          #FFFFFF;   /* Fondo base */
-  --musgo-card:     #F8F8F8;   /* Cards y superficies */
-  --musgo-hover:    #F0F0F0;   /* Hover de superficies */
-  --musgo-deep:     #0F1210;   /* Footer */
+  /* ── Paleta ──
+     Proporción buscada en cada pieza:
+     marfil/crema 60% · cacao/negro 20% · tierra 12% · caramelo 5% · verde 3% */
 
-  --esmeralda:      #3D8C6A;   /* Acento principal */
-  --esmeralda-dark: #2A6E52;   /* Hover de acento */
-  --esmeralda-rich: #F0F7F3;   /* Fondos tinted suaves */
-  --esmeralda-hover:#2E7A5A;   /* Hover sobre fondo claro */
-  --esmeralda-muted:rgba(61,140,106,0.08);
+  --marfil:        #F5F3EF;   /* Fondo principal. Reemplaza al blanco puro */
+  --crema:         #E8E0D5;   /* Fondo secundario, tarjetas, secciones alternas */
+  --crema-hover:   #DFD5C7;   /* Hover de superficies claras */
 
-  --rocio:          #0F1210;   /* Texto principal */
-  --rocio-dim:      #888888;   /* Texto secundario */
-  --salvia:         #AAAAAA;   /* Texto muted, labels */
+  --cacao:         #3A2C23;   /* Oscuro de marca: footer y secciones de contraste */
+  --cacao-suave:   #4A3A2F;   /* Superficies sobre cacao */
 
-  --borde:          #E8E8E8;
-  --borde-sutil:    #E8E8E8;
-  --borde-hover:    #3D8C6A;
+  --tierra:        #7A5A43;   /* Antetítulos, datos y detalles sobre claro */
+  --tierra-claro:  #A08B78;   /* Texto muted sobre claro */
+  --caramelo:      #C9A27A;   /* Acentos sobre cacao. Nunca sobre claro: no contrasta */
+
+  --verde:         #2E6B51;   /* Verde Impulso sobre claro */
+  --verde-hover:   #255640;
+  --verde-claro:   #3D8C6A;   /* Verde Impulso sobre oscuro */
+  --verde-muted:   rgba(46,107,81,0.08);
+
+  --negro:         #0F1210;   /* Texto principal sobre claro */
+
+  --borde:         #DED6C9;
+  --borde-fuerte:  #C9BFAF;
+  --borde-hover:   var(--verde);
+
+  /* Sobre cacao */
+  --sobre-cacao:        rgba(245,243,239,0.74);
+  --sobre-cacao-tenue:  rgba(245,243,239,0.40);
+  --borde-cacao:        rgba(245,243,239,0.12);
+
+  /* Funcional, fuera de la paleta de marca */
+  --error:         #B5483F;
+  --error-suave:   rgba(181,72,63,0.08);
+  --error-borde:   rgba(181,72,63,0.28);
 
   /* ── Tipografía ── */
-  --font-serif: 'Libre Baskerville', Georgia, serif;
-  --font-sans:  'Montserrat', system-ui, sans-serif;
+  --font-display: 'Alte Haas Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-text:    'Urbanist', system-ui, sans-serif;
 
   /* Tamaños fluid */
   --text-xs:    11px;
@@ -38,6 +75,12 @@
   --text-2xl:   clamp(26px, 3vw, 38px);
   --text-3xl:   clamp(36px, 4.2vw, 52px);
   --text-hero:  clamp(42px, 6vw, 76px);
+
+  /* Tracking del brandbook */
+  --track-titular:  -0.02em;   /* Alte Haas Regular en titulares */
+  --track-ante:      0.35em;   /* Alte Haas Bold en antetítulos, MAYÚSCULAS */
+  --track-cuerpo:    0.02em;   /* Urbanist Light en cuerpo */
+  --track-creativo:  0.50em;   /* "CREATIVO" del bloque tipográfico */
 
   /* ── Espaciado ── */
   --space-xs:   8px;
@@ -59,8 +102,8 @@
   --dur-slow:  0.6s;
 
   /* ── Radios ── */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 32px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 30px;
 }
