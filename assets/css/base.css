@@ -266,7 +266,7 @@ strong { font-weight: 600; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--verde);
+  color: var(--caramelo);
   margin-bottom: 20px;
   opacity: 1;
 }
@@ -310,7 +310,7 @@ strong { font-weight: 600; }
 }
 .footer-copy {
   font-size: var(--text-xs);
-  color: rgba(245,243,239,0.28);
+  color: rgba(245,243,239,0.42);
   letter-spacing: 0.04em;
 }
 
