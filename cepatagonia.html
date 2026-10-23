@@ -96,6 +96,7 @@
     .caso-claim em { font-style: italic; color: var(--verde); }
 
     .caso-video { width: 100%; height: auto; display: block; aspect-ratio: 4 / 5; object-fit: cover; background: var(--crema); }
+    .caso-video--story { aspect-ratio: 9 / 16; }
 
     .caso-ejes { margin-top: var(--space-md); border-top: 1px solid var(--borde); }
     .caso-eje { display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--borde); align-items: start; }
@@ -442,6 +443,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <figcaption>El mostrador, con las credenciales desplegadas y listas para buscar.</figcaption>
         </figure>
       </div>
+      <figure class="caso-pieza caso-pieza--story reveal" style="max-width:400px; margin:var(--space-md) auto 0">
+        <video class="caso-video caso-video--story" src="assets/video/cepatagonia-recap.mp4"
+               poster="assets/img/portfolio/cepatagonia/recap-poster.jpg"
+               controls playsinline preload="metadata"
+               aria-label="Recap de las dos jornadas del congreso CEPATAGONIA: la acreditación en la puerta, las charlas, las demostraciones en vivo y el cierre"></video>
+        <figcaption>El recap de las dos jornadas — 1:43, con sonido.</figcaption>
+      </figure>
     </div>
   </section>
 
